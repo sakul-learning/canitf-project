@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import pathlib
 
+from .cdktn import generate_cdktn_source
 from .github import fetch_releases, releases_from_json, releases_to_json
 from .parser import extract_candidates_from_release, merge_candidates
 from .table import load_canitf_features, rows_to_json, rows_to_markdown
@@ -47,6 +48,17 @@ def cmd_inspect_canitf(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_generate_cdktn_source(args: argparse.Namespace) -> int:
+    generate_cdktn_source(
+        features_input_path=args.features_input,
+        out_path=args.out,
+        generated_features_path=args.generated_features,
+        baseline=args.baseline,
+    )
+    print(f"wrote CDK Terrain source to {args.out}")
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(prog="canitf", description="Terraform/OpenTofu feature tracking from official release notes")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -66,6 +78,13 @@ def build_parser() -> argparse.ArgumentParser:
 
     p = sub.add_parser("inspect-canitf", help="check the public cani.tf JSON API")
     p.set_defaults(func=cmd_inspect_canitf)
+
+    p = sub.add_parser("generate-cdktn-source", help="generate a CDK Terrain TypeScript feature constraint source file")
+    p.add_argument("--features-input", default="data/hcl-feature-input.json", help="human-curated feature input JSON")
+    p.add_argument("--generated-features", default="data/features.json", help="generated feature rows used to fill missing fields")
+    p.add_argument("--out", default="data/cdktn-feature-constraints.ts")
+    p.add_argument("--baseline", default=None, help="comparison baseline version, defaults to the input file baseline")
+    p.set_defaults(func=cmd_generate_cdktn_source)
     return parser
 
 

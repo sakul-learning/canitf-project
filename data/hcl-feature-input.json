@@ -1,0 +1,88 @@
+{
+  "baseline": "1.7.5",
+  "scope": "HCL configuration features after the OpenTofu/Terraform divergence point relevant to CDK Terrain validations",
+  "fork_note": "OpenTofu did not fork from Terraform 1.7.5; OpenTofu started from the Terraform 1.5.x MPL lineage and then shipped its own 1.6+ releases. This project uses 1.7.5 as the comparison baseline because cdk-terrain currently pins Terraform 1.7.5 in mise.toml.",
+  "features": [
+    {
+      "name": "S3 native state locking",
+      "key": "s3-native-state-locking",
+      "category": "backend",
+      "cdktnUseCase": "S3BackendConfig.useLockfile",
+      "constraints": {
+        "terraform": ">=1.10.0",
+        "opentofu": ">=1.10.0"
+      },
+      "sources": [
+        "https://developer.hashicorp.com/terraform/language/v1.10.x/upgrade-guides#s3-backend",
+        "https://opentofu.org/docs/intro/whats-new/#native-s3-state-locking"
+      ]
+    },
+    {
+      "name": "Provider-defined functions",
+      "key": "provider-defined-functions",
+      "category": "hcl-functions",
+      "constraints": {
+        "terraform": ">=1.8.0",
+        "opentofu": ">=1.7.0"
+      },
+      "sources": []
+    },
+    {
+      "name": "Configured provider-defined functions",
+      "key": "configured-provider-defined-functions",
+      "category": "hcl-functions",
+      "constraints": {
+        "opentofu": ">=1.7.0"
+      },
+      "sources": []
+    },
+    {
+      "name": "Test override blocks",
+      "key": "override-resource-data-module",
+      "category": "tests",
+      "hclBlocks": ["override_resource", "override_data", "override_module"],
+      "constraints": {
+        "terraform": ">=1.7.0",
+        "opentofu": ">=1.8.0"
+      },
+      "sources": []
+    },
+    {
+      "name": "Ephemeral values and resources",
+      "key": "ephemeral-values-and-resources",
+      "category": "hcl-ephemerality",
+      "constraints": {
+        "terraform": ">=1.10.0",
+        "opentofu": ">=1.11.0"
+      },
+      "sources": [
+        "https://developer.hashicorp.com/terraform/language/resources/ephemeral",
+        "https://opentofu.org/docs/language/ephemerality/ephemeral-resources/"
+      ]
+    },
+    {
+      "name": "Write-only attributes",
+      "key": "write-only-attributes",
+      "category": "hcl-ephemerality",
+      "constraints": {
+        "terraform": ">=1.11.0",
+        "opentofu": ">=1.11.0"
+      },
+      "sources": [
+        "https://developer.hashicorp.com/terraform/language/resources/ephemeral/write-only",
+        "https://opentofu.org/docs/main/language/ephemerality/write-only-attributes/"
+      ]
+    },
+    {
+      "name": "Backend configuration using locals and variables",
+      "key": "backend-configuration-using-locals-and-variables",
+      "category": "backend",
+      "constraints": {
+        "opentofu": ">=1.8.0"
+      },
+      "sources": [
+        "https://github.com/hashicorp/terraform/issues/13022"
+      ]
+    }
+  ]
+}

@@ -33,6 +33,10 @@ jobs:
             --json-out data/features.json \
             --markdown-out data/feature-table.md \
             --include-canitf
+          canitf generate-cdktn-source \
+            --features-input data/hcl-feature-input.json \
+            --generated-features data/features.json \
+            --out data/cdktn-feature-constraints.ts
 
       - name: Run tests
         run: python -m unittest discover -s tests -v

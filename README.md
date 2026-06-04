@@ -58,7 +58,38 @@ features.
 canitf inspect-canitf
 canitf fetch --per-page 30 --max-pages 2 --out data/releases.json
 canitf build-table --input data/releases.json --markdown-out table.md
+canitf generate-cdktn-source \
+  --features-input data/hcl-feature-input.json \
+  --generated-features data/features.json \
+  --out data/cdktn-feature-constraints.ts
 ```
+
+## CDK Terrain-focused HCL feature constraints
+
+The broad release-note table is noisy by design. For CDK Terrain validation work,
+use the narrower semi-curated input file:
+
+- `data/hcl-feature-input.json` — human-controlled scope, baseline, feature keys,
+  constraints, and sources.
+- `data/cdktn-feature-constraints.ts` — generated TypeScript shaped for the
+  `ValidateTerraformFeatureVersion` validator introduced in
+  `open-constructs/cdk-terrain#237`.
+
+Important baseline note: OpenTofu did **not** fork from Terraform 1.7.5. It
+started from the Terraform 1.5.x MPL lineage and then shipped OpenTofu 1.6+
+releases. This project uses Terraform `1.7.5` as the comparison baseline for
+CDK Terrain because the local `cdk-terrain` workspace pins Terraform 1.7.5 in
+`mise.toml`.
+
+The current narrowed HCL/configuration scope covers:
+
+- S3 native state locking / S3 backend `useLockfile`
+- provider-defined functions
+- configured provider-defined functions
+- `override_resource`, `override_data`, and `override_module` test blocks
+- ephemeral values and resources
+- write-only attributes
+- backend configuration using locals and variables
 
 ## Development
 
