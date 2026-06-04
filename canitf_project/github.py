@@ -27,7 +27,7 @@ DEFAULT_REPOS = {
 }
 
 
-def _request_json(url: str, token: str | None = None):
+def _request_json(url: str, token: str | None = None, attempts: int = 4):
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "canitf-project/0.1",
@@ -36,8 +36,21 @@ def _request_json(url: str, token: str | None = None):
     if token:
         headers["Authorization"] = f"Bearer {token}"
     req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    last_error: Exception | None = None
+    for attempt in range(1, attempts + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as resp:
+                return json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            last_error = exc
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == attempts:
+                raise
+        except TimeoutError as exc:
+            last_error = exc
+            if attempt == attempts:
+                raise
+        time.sleep(min(2 ** attempt, 10))
+    raise RuntimeError(f"request failed after {attempts} attempts: {last_error}")
 
 
 def fetch_releases(repos: dict[str, str] | None = None, per_page: int = 100, max_pages: int = 3, token: str | None = None) -> list[Release]:

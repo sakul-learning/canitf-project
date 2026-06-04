@@ -2,7 +2,4 @@
 __pycache__/
 .pytest_cache/
 *.egg-info/
-data/releases.json
-data/features.json
-data/feature-table.md
 .env

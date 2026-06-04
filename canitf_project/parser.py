@@ -66,6 +66,10 @@ def extract_candidates_from_release(tool: str, tag: str, url: str, body: str) ->
         title = normalize_title(bullet.group(1))
         if not title or len(title) < 8:
             continue
+        if re.search(r"\bmade their first contribution\b", title, re.I):
+            continue
+        if re.search(r"\b(full changelog|contributors|thank you|checksums|docker images)\b", title, re.I):
+            continue
         if current_score == 0 and not re.search(r"\b(adds?|added|new|supports?|support for|allows?|introduces?)\b", title, re.I):
             continue
         key = feature_key(title)
