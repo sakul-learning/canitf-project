@@ -4,12 +4,15 @@ version = "0.1.0"
 description = "Build Terraform/OpenTofu feature parity tracking tables from official GitHub releases and changelogs."
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = "MIT"
 authors = [{name = "canitf project"}]
 keywords = ["terraform", "opentofu", "changelog", "release-notes", "feature-parity"]
 
 [project.scripts]
 canitf = "canitf_project.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["canitf_project*"]
 
 [build-system]
 requires = ["setuptools>=69"]
