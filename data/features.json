@@ -62,6 +62,19 @@
     }
   },
   {
+    "key": "a-minimal-refresh-planning-option-has-been-which-only-refresh-resources-that-have-proposed-changes",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827"
+    ],
+    "title": "A new -minimal-refresh planning option has been added, which will only refresh resources that have proposed changes",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+        "version": "1.17.0-alpha20260827"
+      }
+    }
+  },
+  {
     "key": "a-or-create-flag-was-to-workspace-select-to-aid-in-creating-workspaces-in-automated-situations",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
@@ -216,6 +229,25 @@
     }
   },
   {
+    "key": "action-configuration-has-a-caller-symbol-which-contains-the-object-value-from-the-calling-resource",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617"
+    ],
+    "title": "Action configuration now has a new caller symbol which contains the object value from the calling resource",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+        "version": "1.16.0-alpha20260715"
+      }
+    }
+  },
+  {
     "key": "actions-for-performing-day-two-operations",
     "sources": [
       "https://developer.hashicorp.com/terraform/language/invoke-actions",
@@ -270,6 +302,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.14.2",
         "version": "1.14.2"
+      }
+    }
+  },
+  {
+    "key": "concurrency-safety-to-configs-parser-and-sourcebundleparser",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.15.7"
+    ],
+    "title": "Add concurrency safety to configs.Parser and SourceBundleParser",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.7",
+        "version": "1.15.7"
       }
     }
   },
@@ -658,6 +703,22 @@
     }
   },
   {
+    "key": "underscores-in-provider-source-address-namespaces-so-private-registry-provider-addresses-are-no-longer-rejected-as-inval",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc1",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2"
+    ],
+    "title": "Allow underscores in provider source address namespaces, so private registry provider addresses are no longer rejected as invalid",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+        "version": "1.16.0"
+      }
+    }
+  },
+  {
     "key": "unknown-error-message-values-to-pass-the-core-validate-step-so-variable-validation-be-completed-later-during-plan",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.10.0",
@@ -693,32 +754,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.3.0",
         "version": "1.3.0"
-      }
-    }
-  },
-  {
-    "key": "as-part-of-introducing-a-heirarchical-namespace-for-providers-requires-an-explicit-source-specification-for-any-provider",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "As part of introducing a new heirarchical namespace for providers, Terraform now requires an explicit source specification for any provider that is not in the \"hashicorp\" namespace in the main public registry",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "automatic-installation-of-third-party-providers-a-decentralized-namespace-for-providers-allowing-for-automatic-installat",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "Automatic installation of third-party providers: Terraform now supports a decentralized namespace for providers, allowing for automatic installation of community providers from third-party namespaces in the public registry and from private registries. (More details will be added about this prior to release.)",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -827,67 +862,6 @@
     }
   },
   {
-    "key": "backend-azurerm-for-snapshotting-the-blob-used-for-remote-state-storage-prior-to-change",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3"
-    ],
-    "title": "backend/azurerm: support for snapshotting the blob used for remote state storage prior to change",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3",
-        "version": "0.13.0-beta3"
-      }
-    }
-  },
-  {
-    "key": "backend-azurerm-the-backend-create-a-azure-storage-snapshot-of-the-previous-state-snapshot-before-writing-a-one",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/azurerm: The backend will now create a Azure storage snapshot of the previous Terraform state snapshot before writing a new one",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "backend-consul-force-unlock-to-the-consul-backend",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007"
-    ],
-    "title": "backend/consul: Add force-unlock support to the Consul backend",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
-    "key": "backend-consul-split-state-into-chunks-when-outgrowing-the-limit-of-the-consul-kv-store-this-storing-state-larger-than-t",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923"
-    ],
-    "title": "backend/consul: Split state into chunks when outgrowing the limit of the Consul KV store. This allows storing state larger than the Consul 512KB limit",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "backend-cos-auth-for-tencent-cloud-backend",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.10.0",
@@ -982,20 +956,6 @@
     }
   },
   {
-    "key": "backend-gcs-service-account-impersonation-to-gcs-backend",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1"
-    ],
-    "title": "backend/gcs: Add service account impersonation to GCS backend",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "backend-gcs-storage-custom-endpoint-argument-to-communication-with-the-backend-via-a-private-service-connect-endpoint",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
@@ -1042,19 +1002,6 @@
     }
   },
   {
-    "key": "backend-http-for-configuration-by-environment-variable",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.2"
-    ],
-    "title": "backend/http: add support for configuration by environment variable",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.2",
-        "version": "0.13.2"
-      }
-    }
-  },
-  {
     "key": "backend-http-for-mtls-authentication",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
@@ -1093,19 +1040,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.0.11",
         "version": "1.0.11"
-      }
-    }
-  },
-  {
-    "key": "backend-oss-locking-of-multiple-different-state-files",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/oss: Now allows locking of multiple different state files",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -1166,19 +1100,6 @@
     }
   },
   {
-    "key": "backend-remote-accept-target-options-when-creating-a-plan-using-remote-operations-if-supported-by-the-target-server-serv",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/remote: Can now accept -target options when creating a plan using _remote operations_, if supported by the target server. (Server-side support for this in Terraform Cloud and Terraform Enterprise will follow in forthcoming releases of each.)",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "backend-remote-fix-error-when-migrating-existing-state-to-a-workspace-on-cloud-enterprise",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.14.9"
@@ -1192,19 +1113,6 @@
     }
   },
   {
-    "key": "backend-remote-state-push-force",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/remote: Now supports terraform state push -force",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "backend-remote-several-cli-options-when-running-plans-and-applies-with-cloud-refresh-false-replace-and-refresh-only",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.15.4"
@@ -1214,19 +1122,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.15.4",
         "version": "0.15.4"
-      }
-    }
-  },
-  {
-    "key": "backend-remote-when-using-the-enhanced-remote-backend-with-commands-which-locally-modify-state-verify-that-the-local-ver",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.1"
-    ],
-    "title": "backend/remote: When using the enhanced remote backend with commands which locally modify state, verify that the local Terraform version and the configured remote workspace Terraform version are compatible. This prevents accidentally upgrading the remote state to an incompatible version. The check is skipped for commands which do not write state, and can also be disabled by the use of a new command-line flag, -ignore-remote-version",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.1",
-        "version": "0.14.1"
       }
     }
   },
@@ -1309,19 +1204,6 @@
     }
   },
   {
-    "key": "backend-s3-region-validation-automatically-the-af-south-1-africa-cape-town-region",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/s3: Region validation now automatically supports the new af-south-1 (Africa (Cape Town)) region",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "backend-s3-authentication-via-aws-login",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.15.0",
@@ -1340,32 +1222,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.0",
         "version": "1.15.0"
-      }
-    }
-  },
-  {
-    "key": "backend-s3-for-appending-data-to-the-user-agent-request-header-with-the-tf-append-user-agent-environment-variable",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.1"
-    ],
-    "title": "backend/s3: support for appending data to the User-Agent request header with the TF_APPEND_USER_AGENT environment variable",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.1",
-        "version": "0.13.1"
-      }
-    }
-  },
-  {
-    "key": "backend-s3-the-backend-has-a-number-of-options-for-customizing-the-assume-role-behavior-including-controlling-the-lifeti",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "backend/s3: The backend has a number of new options for customizing the \"assume role\" behavior, including controlling the lifetime and access policy of temporary credentials",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -1410,6 +1266,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.1.5",
         "version": "1.1.5"
+      }
+    }
+  },
+  {
+    "key": "basic-linting-introduced",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "Basic linting support introduced",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
@@ -1479,25 +1348,6 @@
       "opentofu": {
         "url": "https://github.com/opentofu/opentofu/releases/tag/v1.10.0-beta1",
         "version": "1.10.0-beta1"
-      }
-    }
-  },
-  {
-    "key": "cli-a-global-command-line-option-chdir-placed-before-the-selected-subcommand-instructs-to-switch-to-a-different-working-",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200910"
-    ],
-    "title": "cli: A new global command line option -chdir=..., placed before the selected subcommand, instructs Terraform to switch to a different working directory before executing the subcommand. This is similar to switching to a new directory with cd before running Terraform, but it avoids changing the state of the calling shell",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
       }
     }
   },
@@ -1628,45 +1478,6 @@
     }
   },
   {
-    "key": "cli-the-providers-mirror-subcommand-automatically-construct-or-update-a-local-filesystem-mirror-directory-containing-the",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "cli: The new terraform providers mirror subcommand can automatically construct or update a local filesystem mirror directory containing the providers required for the current configuration",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "cli-the-state-replace-provider-subcommand-changing-the-selected-provider-for-existing-resource-instances-in-the-state",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "cli: The new terraform state replace-provider subcommand allows changing the selected provider for existing resource instances in the Terraform state",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "cli-when-installing-providers-from-the-registry-verify-the-trust-signature-for-partner-providers-and-for-self-signed-com",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "cli: When installing providers from the Terraform Registry, Terraform will verify the trust signature for partner providers, and allow for self-signed community providers",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "cloud-for-using-the-generic-hostname-localterraform-com-in-module-and-provider-sources-as-a-substitute-for-the-currently",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
@@ -1692,32 +1503,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.6.0-alpha20230802",
         "version": "1.6.0-alpha20230802"
-      }
-    }
-  },
-  {
-    "key": "command-import-fix-missing-config-option",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3"
-    ],
-    "title": "command/import: Fix -allow-missing-config option",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3",
-        "version": "0.13.0-beta3"
-      }
-    }
-  },
-  {
-    "key": "command-import-the-missing-config-option-works-correctly-it-was-inadvertently-disabled-as-part-of-v0-12-refactoring",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "command/import: The -allow-missing-config option now works correctly. It was inadvertently disabled as part of v0.12 refactoring",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -1785,58 +1570,6 @@
     }
   },
   {
-    "key": "command-for-provider-redirects-to-0-13upgrade-if-a-provider-in-the-registry-has-moved-to-a-namespace-the-0-13upgrade-sub",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.2"
-    ],
-    "title": "command: Add support for provider redirects to 0.13upgrade. If a provider in the Terraform Registry has moved to a new namespace, the 0.13upgrade subcommand now detects this and follows the redirect where possible",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.2",
-        "version": "0.13.2"
-      }
-    }
-  },
-  {
-    "key": "command-an-experimental-concise-diff-renderer-by-default-plans-hide-most-unchanged-fields-only-displaying-the-most-relev",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200910"
-    ],
-    "title": "command: Added an experimental concise diff renderer. By default, Terraform plans now hide most unchanged fields, only displaying the most relevant changes and some identifying context. This experiment can be disabled by setting a TF_X_CONCISE_DIFF environment variable to 0",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200910",
-        "version": "0.14.0-alpha20200910"
-      }
-    }
-  },
-  {
-    "key": "command-include-schemas-from-required-but-unused-providers-in-the-output-of-providers-schema-this-development-tools-such",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.4"
-    ],
-    "title": "command: Include schemas from required but unused providers in the output of terraform providers schema. This allows development tools such as the Terraform language server to offer autocompletion for the first resource for a given provider",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.4",
-        "version": "0.13.4"
-      }
-    }
-  },
-  {
-    "key": "command-prevent-creation-of-workspaces-with-invalid-names-via-the-tf-workspace-environment-variable-and-any-existing-inv",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.1"
-    ],
-    "title": "command: Prevent creation of workspaces with invalid names via the TF_WORKSPACE environment variable, and allow any existing invalid workspaces to be deleted",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.1",
-        "version": "0.13.1"
-      }
-    }
-  },
-  {
     "key": "communicator-ssh-keepalive",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.11.15"
@@ -1846,19 +1579,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.11.15",
         "version": "0.11.15"
-      }
-    }
-  },
-  {
-    "key": "communicator-winrm-a-connection-timeout-for-winrm-connection-blocks-previously-this-argument-worked-for-ssh-only",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "communicator/winrm: Support a connection timeout for WinRM connection blocks. Previously this argument worked for SSH only",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -1928,101 +1648,6 @@
     }
   },
   {
-    "key": "config-missing-validation-to-prevent-provider-configuration-within-modules-using-depends-on",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3"
-    ],
-    "title": "config: Add missing validation to prevent provider configuration within modules using depends_on",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0-beta3",
-        "version": "0.13.0-beta3"
-      }
-    }
-  },
-  {
-    "key": "config-alltrue-and-anytrue-functions-which-serve-as-a-sort-of-dynamic-version-of-the-and-or-operators-respectively-these",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2"
-    ],
-    "title": "config: Added alltrue and anytrue functions, which serve as a sort of dynamic version of the && and || or operators, respectively. These are intended to allow evaluating boolean conditions, such as in variable validation blocks, across all of the items in a collection using for expressions.], [",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
-    "key": "config-alltrue-function-which-returns-true-if-all-elements-in-the-given-collection-are-true-this-is-primarily-intended-t",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923"
-    ],
-    "title": "config: Added alltrue function, which returns true if all elements in the given collection are true. This is primarily intended to make it easier to write variable validation conditions which operate on collections",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923",
-        "version": "0.14.0-alpha20200923"
-      }
-    }
-  },
-  {
-    "key": "config-sensitive-argument-for-variable-blocks-which-supresses-output-where-that-variable-is-used",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2"
-    ],
-    "title": "config: Added sensitive argument for variable blocks, which supresses output where that variable is used",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
-    "key": "config-cidrsubnet-and-cidrhost-address-extensions-of-more-than-32-bits",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.1"
-    ],
-    "title": "config: cidrsubnet and cidrhost now support address extensions of more than 32 bits",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.1",
-        "version": "0.13.1"
-      }
-    }
-  },
-  {
-    "key": "config-fix-sum-function-when-called-with-values-which-are-not-known-until-apply-also-sum-to-cope-with-numbers-too-large-",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.3"
-    ],
-    "title": "config: Fix sum function when called with values which are not known until apply. Also allows sum to cope with numbers too large to represent in float64, along with correctly handling errors around infinite values",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.3",
-        "version": "0.14.3"
-      }
-    }
-  },
-  {
-    "key": "config-for-each-maps-whose-element-values-are-sensitive-as-long-as-the-element-keys-and-the-map-itself-are-not-sensitive",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.3"
-    ],
-    "title": "config: for_each now allows maps whose _element values_ are sensitive, as long as the element keys and the map itself are not sensitive",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.3",
-        "version": "0.14.3"
-      }
-    }
-  },
-  {
     "key": "config-improve-the-sensitivity-for-lookup-and-length-functions-which-were-accidentally-omitted-from-the-larger-update-in",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.15.4"
@@ -2032,19 +1657,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.15.4",
         "version": "0.15.4"
-      }
-    }
-  },
-  {
-    "key": "config-modules-authored-by-the-same-vendor-as-the-main-provider-they-use-pass-metadata-to-the-provider-to-for-instrument",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "config: Modules authored by the same vendor as the main provider they use can now pass metadata to the provider to allow for instrumentation and analytics",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -2091,21 +1703,6 @@
     }
   },
   {
-    "key": "config-functions-textencodebase64-and-textdecodebase64-for-encoding-text-in-various-character-encodings-other-than-utf-8",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2"
-    ],
-    "title": "config: New functions textencodebase64 and textdecodebase64 for encoding text in various character encodings other than UTF-8",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "config-optional-attributes-for-object-type-constraints-as-described-under-features-above",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.3.0",
@@ -2121,20 +1718,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.3.0",
         "version": "1.3.0"
-      }
-    }
-  },
-  {
-    "key": "config-report-an-error-when-provider-configuration-attributes-are-incorrectly-to-a-required-providers-object",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1"
-    ],
-    "title": "config: Report an error when provider configuration attributes are incorrectly added to a required_providers object",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
       }
     }
   },
@@ -2161,89 +1744,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.9.0",
         "version": "1.9.0"
-      }
-    }
-  },
-  {
-    "key": "config-the-configuration-language-uses-unicode-12-0-character-tables-for-certain-unicode-version-sensitive-operations-on",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "config: The configuration language now uses Unicode 12.0 character tables for certain Unicode-version-sensitive operations on strings, such as the upper and lower functions. Those working with strings containing new characters introduced since Unicode 9.0 may see small differences in behavior as a result of these table updates",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "config-the-sum-function-takes-a-list-or-set-of-numbers-and-returns-the-sum-of-all-elements",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "config: The new sum function takes a list or set of numbers and returns the sum of all elements",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "config-the-rsadecrypt-function-the-openssh-rsa-key-format",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "config: The rsadecrypt function now supports the OpenSSH RSA key format",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
-    "key": "configs-alltrue-function-which-returns-true-if-all-elements-in-the-given-collection-are-true-this-is-primarily-intended-",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007"
-    ],
-    "title": "configs: Added alltrue function, which returns true if all elements in the given collection are true. This is primarily intended to make it easier to write variable validation conditions which operate on collections",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-        "version": "0.14.0-beta1"
-      }
-    }
-  },
-  {
-    "key": "configs-sensitive-argument-for-variable-blocks-which-supresses-output-where-that-variable-is-used",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007"
-    ],
-    "title": "configs: Added sensitive argument for variable blocks, which supresses output where that variable is used",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-        "version": "0.14.0-beta1"
-      }
-    }
-  },
-  {
-    "key": "configs-report-an-error-when-provider-configuration-attributes-are-incorrectly-to-a-required-providers-object",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923"
-    ],
-    "title": "configs: Report an error when provider configuration attributes are incorrectly added to a required_providers object",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-        "version": "0.14.0-beta2"
       }
     }
   },
@@ -2386,19 +1886,6 @@
     }
   },
   {
-    "key": "core-several-of-s-graph-operations-are-better-optimized-to-configurations-with-highly-connected-graphs",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "core: Several of Terraform's graph operations are now better optimized to support configurations with highly-connected graphs.,",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "core-upgrade-and-refresh-unless-disabled-deposed-objects-during-planning-in-a-similar-manner-as-for-objects-that-have-be",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.15.4"
@@ -2421,19 +1908,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.15.2",
         "version": "0.15.2"
-      }
-    }
-  },
-  {
-    "key": "custom-validation-rules-for-input-variables-a-validation-block-type-inside-variable-blocks-module-authors-to-define-vali",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "Custom validation rules for input variables: A new validation block type inside variable blocks allows module authors to define validation rules at the public interface into a module, so that errors in the calling configuration can be reported in the caller's context rather than inside the implementation details of the module",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -2817,13 +2291,20 @@
   {
     "key": "import-for-import-blocks-inside-modules",
     "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603"
     ],
     "title": "import: add support for import blocks inside modules",
     "tools": {
       "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
-        "version": "1.16.0-alpha20260603"
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+        "version": "1.16.0-alpha20260715"
       }
     }
   },
@@ -2870,13 +2351,20 @@
   {
     "key": "init-warnings-when-unmanaged-providers-are-in-use-and-impact-provider-installation-processes",
     "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603"
     ],
     "title": "init: Add warnings when unmanaged providers are in use and will impact provider installation processes",
     "tools": {
       "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
-        "version": "1.16.0-alpha20260603"
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+        "version": "1.16.0-alpha20260715"
       }
     }
   },
@@ -3152,19 +2640,6 @@
     }
   },
   {
-    "key": "modules-for-loading-modules-with-s3-virtual-hosted-style-access",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0"
-    ],
-    "title": "modules: Adds support for loading modules with S3 virtual hosted-style access",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "most-of-the-commands-prints-the-usage-text-when-arguments-parsing-fails-prints-previously-legacy-error-messages-as-regul",
     "sources": [
       "https://github.com/opentofu/opentofu/releases/tag/v1.12.0-rc1",
@@ -3191,19 +2666,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.1.0",
         "version": "1.1.0"
-      }
-    }
-  },
-  {
-    "key": "network-based-mirrors-for-provider-installation-as-an-addition-to-the-existing-capability-of-mirroring-providers-into-th",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.2"
-    ],
-    "title": "Network-based Mirrors for Provider Installation: As an addition to the existing capability of \"mirroring\" providers into the local filesystem, a network mirror allows publishing copies of providers on an HTTP server and using that as an alternative source for provider packages, for situations where directly accessing the origin registries is impossible or undesirable",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.2",
-        "version": "0.13.2"
       }
     }
   },
@@ -3238,6 +2700,19 @@
     }
   },
   {
+    "key": "function-convert-converting-a-given-value-to-a-specified-type-constraint",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "New function convert allows converting a given value to a specified type constraint",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
     "key": "improved-testing-feature-documentation-that-be-available-tomorrow",
     "sources": [
       "https://github.com/opentofu/opentofu/releases/tag/v1.6.0-beta1"
@@ -3266,19 +2741,6 @@
     }
   },
   {
-    "key": "kubernetes-remote-state-storage-backend-this-backend-stores-state-snapshots-as-kubernetes-secrets",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "New Kubernetes remote state storage backend: This backend stores state snapshots as Kubernetes secrets",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
-      }
-    }
-  },
-  {
     "key": "lifecycle-meta-argument-destroy-when-set-to-false-plan-to-just-remove-the-affected-object-from-state-without-asking-the-",
     "sources": [
       "https://github.com/opentofu/opentofu/releases/tag/v1.12.0-rc1",
@@ -3295,14 +2757,21 @@
   {
     "key": "store-block-in-terraform-data-that-handle-ephemeral-and-sensitive-values",
     "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260513"
     ],
     "title": "New store block in terraform_data that can handle ephemeral and sensitive values",
     "tools": {
       "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
-        "version": "1.16.0-alpha20260603"
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+        "version": "1.16.0-alpha20260715"
       }
     }
   },
@@ -3623,20 +3092,6 @@
     }
   },
   {
-    "key": "provider-sensitive-attrs-this-is-an-unusual-experiment-in-that-it-doesn-t-directly-you-to-use-a-feature-in-your-module-c",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1"
-    ],
-    "title": "provider_sensitive_attrs: This is an unusual experiment in that it doesn't directly allow you to use a new feature in your module configuration but instead it changes the automatic behavior of Terraform in modules where it's enabled",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "provisioner-remote-exec-and-provisioner-file-when-using-ssh-agent-authentication-mode-on-windows-detect-and-use-the-wind",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.1.0",
@@ -3715,6 +3170,23 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.2.0-rc2",
         "version": "1.2.0-rc2"
+      }
+    }
+  },
+  {
+    "key": "resource-lifecycle-blocks-destroy-false-to-prevent-a-resource-from-being-destroyed",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc1",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta1"
+    ],
+    "title": "Resource lifecycle blocks now support destroy = false to prevent a resource from being destroyed",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+        "version": "1.16.0"
       }
     }
   },
@@ -3902,6 +3374,20 @@
     }
   },
   {
+    "key": "destroy-false-in-resource-lifecycle-blocks",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708"
+    ],
+    "title": "Support destroy=false in resource lifecycle blocks",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+        "version": "1.16.0-alpha20260715"
+      }
+    }
+  },
+  {
     "key": "for-module-version-evaluating-to-null-in-the-context-of-dynamic-module-sources",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.15.5"
@@ -3911,6 +3397,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.5",
         "version": "1.15.5"
+      }
+    }
+  },
+  {
+    "key": "referencing-modules-containing-dynamic-sources-in-test",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.1"
+    ],
+    "title": "Support referencing modules containing dynamic sources in Terraform Test",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.1",
+        "version": "1.16.1"
       }
     }
   },
@@ -3986,19 +3485,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.1.0-alpha20211006",
         "version": "1.1.0-alpha20211006"
-      }
-    }
-  },
-  {
-    "key": "cli-tls-1-3-and-ed25519-certificates-when-making-outgoing-connections-to-remote-tls-servers",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.13.0"
-    ],
-    "title": "Terraform CLI now supports TLS 1.3 and supports Ed25519 certificates when making outgoing connections to remote TLS servers",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.0",
-        "version": "0.13.0"
       }
     }
   },
@@ -4136,24 +3622,6 @@
     }
   },
   {
-    "key": "login-for-oauth2-application-scopes",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923"
-    ],
-    "title": "terraform login: Added support for OAuth2 application scopes",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "requires-utf-8-character-encoding-and-virtual-terminal-when-running-on-windows-this-unifies-s-terminal-handling-on-windo",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.15.0",
@@ -4166,21 +3634,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.15.0",
         "version": "0.15.0"
-      }
-    }
-  },
-  {
-    "key": "marking-input-variables-as-sensitive-and-propagate-that-sensitivity-through-expressions-that-derive-from-sensitive-input",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2"
-    ],
-    "title": "Terraform now supports marking input variables as sensitive, and will propagate that sensitivity through expressions that derive from sensitive input variables",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
       }
     }
   },
@@ -4215,37 +3668,6 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.0",
         "version": "1.15.0"
-      }
-    }
-  },
-  {
-    "key": "output-a-raw-mode-activated-by-the-raw-option-for-printing-out-the-raw-string-representation-of-a-particular-output-valu",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.3"
-    ],
-    "title": "terraform output: Now supports a new \"raw\" mode, activated by the -raw option, for printing out the raw string representation of a particular output value",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.3",
-        "version": "0.14.3"
-      }
-    }
-  },
-  {
-    "key": "plan-and-apply-an-experimental-concise-diff-renderer-by-default-plans-hide-most-unchanged-fields-only-displaying-the-mos",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20200923"
-    ],
-    "title": "terraform plan and terraform apply: Added an experimental concise diff renderer. By default, Terraform plans now hide most unchanged fields, only displaying the most relevant changes and some identifying context. This experiment can be disabled by setting a TF_X_CONCISE_DIFF environment variable to 0",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
       }
     }
   },
@@ -4538,20 +3960,6 @@
     }
   },
   {
-    "key": "reading-and-writing-all-compatible-state-files-even-from-future-versions-of-this-means-that-users-of-0-14-0-be-able-to-s",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1"
-    ],
-    "title": "Terraform will now support reading and writing all compatible state files, even from future versions of Terraform. This means that users of Terraform 0.14.0 will be able to share state files with future Terraform versions until a new state file format version is needed. We have no plans to change the state file format at this time",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "workspace-delete-deleting-a-workspace-whose-state-contains-only-data-resource-instances-and-output-values-without-runnin",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.1.0",
@@ -4570,23 +3978,6 @@
     }
   },
   {
-    "key": "s-http-client-code-is-slightly-stricter-than-before-in-http-header-parsing-but-in-ways-that-should-not-affect-typical-se",
-    "sources": [
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-rc1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta2",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-beta1",
-      "https://github.com/hashicorp/terraform/releases/tag/v0.14.0-alpha20201007"
-    ],
-    "title": "Terraform's HTTP client code is now slightly stricter than before in HTTP header parsing, but in ways that should not affect typical server implementations: Terraform now trims only _ASCII_ whitespace characters, and does not allow Transfer-Encoding: identity",
-    "tools": {
-      "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v0.14.0",
-        "version": "0.14.0"
-      }
-    }
-  },
-  {
     "key": "terraform-data-is-a-builtin-managed-resource-type-which-replace-the-use-of-null-resource-and-store-data-of-any-type",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
@@ -4599,6 +3990,23 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.4.0",
         "version": "1.4.0"
+      }
+    }
+  },
+  {
+    "key": "terraform-data-the-store-block-hold-ephemeral-and-sensitive-values-across-plan-and-apply",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc2",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-rc1",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta2",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-beta1"
+    ],
+    "title": "terraform_data: The new store block can hold ephemeral and sensitive values across plan and apply",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0",
+        "version": "1.16.0"
       }
     }
   },
@@ -4625,6 +4033,16 @@
   {
     "key": "test-authors-specify-backend-blocks-within-run-blocks-in-test-files-run-blocks-with-backend-blocks-load-state-from-the-s",
     "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260812",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260729",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260513",
       "https://github.com/hashicorp/terraform/releases/tag/v1.15.0-alpha20260304",
@@ -4637,8 +4055,8 @@
     "title": "Test authors can now specify backend blocks within run blocks in Terraform Test files. Run blocks with backend blocks will load state from the specified backend instead of starting from empty state on every execution. This allows test authors to keep long-running test infrastructure alive between test operations, saving time during regular test operations",
     "tools": {
       "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
-        "version": "1.16.0-alpha20260603"
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+        "version": "1.17.0-alpha20260827"
       }
     }
   },
@@ -4672,6 +4090,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.13.0",
         "version": "1.13.0"
+      }
+    }
+  },
+  {
+    "key": "the-aws-kms-encryption-key-provider-an-encryption-context-field-allowing-key-value-string-pairs-to-be-passed-to-aws-kms-",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The aws_kms encryption key provider now supports an encryption_context field, allowing key-value string pairs to be passed to AWS KMS with every GenerateDataKey and Decrypt call",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
@@ -4737,6 +4168,19 @@
     }
   },
   {
+    "key": "the-base64gzip-function-generates-results-that-are-equivalent-to-but-not-equal-to-the-results-from-previous-releases-as-",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The base64gzip function now generates results that are equivalent to _but not equal to_ the results from previous releases, as a result of a new optimized DEFLATE compression implementation",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
     "key": "the-builtin-provider-s-terraform-remote-state-data-source-no-longer-enforces-version-checks-on-the-remote-state-file-thi",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v0.13.6",
@@ -4747,6 +4191,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v0.13.6",
         "version": "0.13.6"
+      }
+    }
+  },
+  {
+    "key": "the-cidrsubnets-function-prefix-extensions-greater-than-32-bits-when-the-base-cidr-block-uses-an-ipv6-address",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The cidrsubnets function now supports prefix extensions greater than 32 bits when the base CIDR block uses an IPv6 address",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
@@ -4770,6 +4227,16 @@
   {
     "key": "the-experimental-deferred-actions-feature-enabled-by-passing-the-deferral-option-to-plan-permits-count-and-for-each-argu",
     "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260812",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260729",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260715",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260708",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260706",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260701",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260626",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260624",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260617",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
       "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260513",
       "https://github.com/hashicorp/terraform/releases/tag/v1.15.0-alpha20260304",
@@ -4814,8 +4281,21 @@
     "title": "The experimental \"deferred actions\" feature, enabled by passing the -allow-deferral option to terraform plan, permits count and for_each arguments in module, resource, and data blocks to have unknown values and allows providers to react more flexibly to unknown values",
     "tools": {
       "terraform": {
-        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.16.0-alpha20260603",
-        "version": "1.16.0-alpha20260603"
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+        "version": "1.17.0-alpha20260827"
+      }
+    }
+  },
+  {
+    "key": "the-gcp-kms-encryption-key-provider-an-optional-additional-authenticated-data-as-part-of-the-encryption-and-decryption-o",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The gcp_kms encryption key provider now supports an optional additional_authenticated_data as part of the encryption and decryption operations",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
@@ -4929,6 +4409,32 @@
       "opentofu": {
         "url": "https://github.com/opentofu/opentofu/releases/tag/v1.6.0-alpha3",
         "version": "1.6.0-alpha3"
+      }
+    }
+  },
+  {
+    "key": "the-openbao-encryption-key-provider-accepts-a-associated-data-argument-allowing-a-base64-encoded-value-to-be-passed-to-o",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The openbao encryption key provider now accepts a new associated_data argument, allowing a base64-encoded value to be passed to OpenBao on every data key generation and decryption call",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
+    "key": "the-providers-lock-command-the-argument-oci-mirror-the-functionality-mimics-that-of-the-field-repository-template-of-oci",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "The providers lock command now supports the argument -oci-mirror. The functionality mimics that of the field repository_template of oci_mirror-block in provider_installation with the exception of using a URI template instead of a HCL one",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
@@ -5124,6 +4630,32 @@
     }
   },
   {
+    "key": "tofu-test-instances-in-test-resource-overrides-including-wildcards",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "tofu test now supports instances in test resource overrides, including wildcards",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
+    "key": "tofu-workspace-includes-a-hint-to-use-tofu-workspace-select-when-the-given-workspace-name-already-exists-instead-of-just",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "tofu workspace new now includes a hint to use tofu workspace select when the given workspace name already exists, instead of just reporting that it already exists",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
     "key": "update-all-references-to-cloud-to-refer-to-hcp-the-service-s-name-this-only-affects-display-text-the-cloud-block-and-env",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.8.2"
@@ -5213,6 +4745,46 @@
     }
   },
   {
+    "key": "various-functions-named-with-the-prefix-assume-authors-to-give-additional-hints-about-what-s-expected-as-the-final-resul",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "Various new functions named with the prefix assume... allow authors to give OpenTofu additional hints about what's expected as the final result of an unknown value, potentially allowing more information to be known during the planning phase",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
+    "key": "version-json-output-includes-a-format-version-field-which-enable-safer-future-changes-of-the-command-s-json-output-forma",
+    "sources": [
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+      "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260812"
+    ],
+    "title": "version: JSON output now includes a new format_version field, which will enable safer future changes of the command's JSON output format. It is assumed existing tooling ignores unknown fields and therefore this change should not be breaking in itself but we advice consumers to pay attention to format_version in future releases and/or use latest version of hashicorp/terraform-json & hashicorp/terraform-exec which does",
+    "tools": {
+      "terraform": {
+        "url": "https://github.com/hashicorp/terraform/releases/tag/v1.17.0-alpha20260827",
+        "version": "1.17.0-alpha20260827"
+      }
+    }
+  },
+  {
+    "key": "when-installing-provider-and-module-packages-from-oci-distribution-registries-tracks-separate-transient-credentials-for-",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "When installing provider and module packages from OCI Distribution registries, OpenTofu now tracks separate transient credentials for each repository to support registry implementations that issue repository-scoped tokens",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
+      }
+    }
+  },
+  {
     "key": "when-making-outgoing-https-or-other-tls-connections-as-a-client-requires-the-server-to-tls-v1-2-tls-v1-0-and-v1-1-are-no",
     "sources": [
       "https://github.com/hashicorp/terraform/releases/tag/v1.2.0",
@@ -5241,6 +4813,19 @@
       "terraform": {
         "url": "https://github.com/hashicorp/terraform/releases/tag/v1.3.0",
         "version": "1.3.0"
+      }
+    }
+  },
+  {
+    "key": "windows-on-arm64-is-an-officially-supported-platform-for-itself-though-this-platform-may-not-be-supported-by-all-availab",
+    "sources": [
+      "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1"
+    ],
+    "title": "Windows on ARM64 is now an officially-supported platform for OpenTofu itself, though this new platform may not be supported by all available provider plugins",
+    "tools": {
+      "opentofu": {
+        "url": "https://github.com/opentofu/opentofu/releases/tag/v1.13.0-beta1",
+        "version": "1.13.0-beta1"
       }
     }
   },
